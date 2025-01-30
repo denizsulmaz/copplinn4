@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Mirage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.min.js"></script>
+    <style>
+        @font-face {font-family: Body;src: url(/media/fonts/u.TTF);}
+        *{font-family: 'Body', sans-serif;}
+        body { margin: 0; overflow: hidden; background: black; }
+        canvas { display: block; }
+        #muteButton {
+            position: fixed;
+            bottom: 30px;
+            right: 40px;
+            padding: 10px 20px;
+            background: #D6B577; 
+            color: #000000;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 28px;
+            transition: 0.3s ease-in-out;
+            font-weight: 600;
+        }
+        #muteButton:hover {
+            background-color: #2f2719;
+            color: #D6B577;
+        }
+        @media (max-width: 768px){
+            #muteButton{
+                right: calc(50% - 90px);
+                padding: 15px 50px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <canvas id="sonicCanvas"></canvas>
+    <button id="muteButton">Unmute</button>
+    <script src="sonic-mirage.js"></script>
+</body>
+</html>
