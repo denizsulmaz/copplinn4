@@ -17,7 +17,7 @@ camera.position.z = 5;
 const originalVertices = geometry.attributes.position.array.slice();
 
 // Setup Audio Processing
-const player = new Tone.Player("/media/experimental.wav").toDestination();
+const player = new Tone.Player("media/experimental.wav").toDestination();
 const fft = new Tone.FFT(64); // Fast Fourier Transform for frequency analysis
 player.connect(fft);
 player.autostart = false; // Default: Muted
