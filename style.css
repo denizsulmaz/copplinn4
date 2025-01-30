@@ -42,11 +42,11 @@
     }
     @font-face {
     font-family: Headline;
-    src: url(/media/fonts/mmMedium.OTF);
+    src: url(media/fonts/mmMedium.OTF);
     }
     @font-face {
         font-family: Body;
-        src: url(/media/fonts/u.TTF);
+        src: url(media/fonts/u.TTF);
         }
     *{font-family: 'Body', sans-serif;}
     h1, h2{font-family: 'Headline', serif;}
@@ -485,23 +485,23 @@
 
     /* Unique backgrounds for each item */
     .menu-item:nth-child(1) .marble-effect {
-        background-image:radial-gradient(#000000c5, #0000005e), url('/media/A1.png');
+        background-image:radial-gradient(#000000c5, #0000005e), url('media/A1.png');
     }
 
     .menu-item:nth-child(2) .marble-effect {
-        background-image:radial-gradient(#000000c5, #0000005e), url('/media/A2.png');
+        background-image:radial-gradient(#000000c5, #0000005e), url('media/A2.png');
     }
 
     .menu-item:nth-child(3) .marble-effect {
-        background-image:radial-gradient(#000000c5, #0000005e), url('/media/A3.png');
+        background-image:radial-gradient(#000000c5, #0000005e), url('media/A3.png');
     }
 
     .menu-item:nth-child(4) .marble-effect {
-        background-image:radial-gradient(#000000c5, #0000005e), url('/media/A4.png');
+        background-image:radial-gradient(#000000c5, #0000005e), url('media/A4.png');
     }
 
     .menu-item:nth-child(5) .marble-effect {
-        background-image:radial-gradient(#000000c5, #0000005e), url('/media/A5.png');
+        background-image:radial-gradient(#000000c5, #0000005e), url('media/A5.png');
     }
 
     .menu-text {
