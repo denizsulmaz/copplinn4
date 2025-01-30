@@ -837,15 +837,16 @@
             margin-top: 7px;
         }
         .hero{
-            height: 80vh;
+            height: 70vh;
+            width: 100vw;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: hidden;
         }
         .hero video {
-            margin-top: 1vh;
+            margin-top: -10vh;
             width: 100vw;
-            height: auto;
             margin-left: 0vw;
             background-color: #000;
         }
@@ -968,7 +969,7 @@
             height: 100%;
         }
         .footer-container {
-            height: 40vh;
+            height: 45vh;
         }
         .logo {width: 80px;margin-top: 6vh;}
         .footer-content {
