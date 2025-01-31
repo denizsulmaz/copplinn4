@@ -27,17 +27,20 @@ let startTime = 0;
 let initialDistortionPhase = true; // Track when it's in the "chaotic start" phase
 
 // Mute/Unmute Button Logic
-document.getElementById('muteButton').addEventListener('click', () => {
+document.getElementById('muteButton').addEventListener('click', async () => {
+    await Tone.start(); // Ensure Tone.js is initialized
+    
     if (isMuted) {
         player.start(); // Start audio
         document.getElementById('muteButton').innerText = "Mute";
-        startTime = performance.now(); // Record start time for initial burst
-        initialDistortionPhase = true; // Enable the burst phase
+        startTime = performance.now();
+        initialDistortionPhase = true;
     } else {
-        player.stop(); // Stop audio
+        player.stop();
         document.getElementById('muteButton').innerText = "Unmute";
-        audioData.fill(0); // Reset effect
+        audioData.fill(0);
     }
+    
     isMuted = !isMuted;
 });
 
