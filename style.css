@@ -90,9 +90,13 @@
         transform: rotate(-90deg);
     }
     .sidebar a:hover {
+        opacity: 0.6;
+        font-weight: 500;
+    }
+    .rotateLeft:hover{
         background: black;
         color: #D6B577;
-        font-weight: 500;
+        opacity: 1 !important;
     }
     .menu-button {
         display: none;
@@ -733,8 +737,15 @@
         text-align: right;
         line-height: 1.5;
     }
-
-
+    .manifesto{
+        width: 50vw;
+        margin: auto;
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+    }
+    .manifesto p{
+        font-size: 23px;
+    }
 
 
 
@@ -1000,7 +1011,15 @@
             font-weight: 500;
             font-size: 32px;
         }
-    
+        .manifesto{
+            width: 80vw;
+            margin: auto;
+            margin-top: 10vh;
+            margin-bottom: 20vh;
+        }
+        .manifesto p{
+            font-size: 20px;
+        }
 
 
 
