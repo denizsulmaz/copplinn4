@@ -135,6 +135,21 @@
       </div>
 
 
-
+<script>
+     function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            sidebar.classList.toggle('open');
+            if (sidebar.classList.contains('open')) {
+                menuIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            } else {
+                menuIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            }
+        }
+</script>
 </body>
 </html>
