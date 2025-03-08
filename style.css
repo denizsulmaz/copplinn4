@@ -848,15 +848,14 @@
             margin-top: 7px;
         }
         .hero{
-            height: 70vh;
+            height: 40vh;
             width: 100vw;
             display: flex;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: center;
             overflow: hidden;
         }
         .hero video {
-            margin-top: -10vh;
             width: 100vw;
             margin-left: 0vw;
             background-color: #000;
