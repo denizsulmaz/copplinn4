@@ -506,16 +506,16 @@
     window.addEventListener('resize', setPositionByIndex);
 });
 
-function updateVideoSource() {
-    const video = document.getElementById("videoSource");
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      video.src = "media/resHero.mp4";
-      video.load(); // Reload the video to apply the new source
-    } else {
-      video.src = "media/hero.mp4";
-      video.load();
-    }
-  }
+// function updateVideoSource() {
+//     const video = document.getElementById("videoSource");
+//     if (window.matchMedia("(max-width: 768px)").matches) {
+//       video.src = "media/resHero.mp4";
+//       video.load(); // Reload the video to apply the new source
+//     } else {
+//       video.src = "media/hero.mp4";
+//       video.load();
+//     }
+//   }
 
   // Run on page load
   updateVideoSource();
@@ -533,6 +533,25 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const video = document.getElementById('videoSource');
+    
+//     // Function to check if the device is mobile
+//     function isMobile() {
+//       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+//           || window.innerWidth <= 768;
+//     }
+    
+//     // If on mobile, disable autoplay
+//     if (isMobile()) {
+//       video.autoplay = false;
+//       video.removeAttribute('autoplay');
+//       // Optional: pause in case autoplay already started
+//       video.pause();
+//     }
+//   });
     </script>
 </body>
 </html>
